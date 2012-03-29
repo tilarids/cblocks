@@ -14,6 +14,7 @@ START_GENERATOR(char, for_each, (char* start, char* end))
     while (start != end)
     {
         YIELD(*start);
+        YIELD(*start); // intentionally
         ++start;
     }
 END_GENERATOR
